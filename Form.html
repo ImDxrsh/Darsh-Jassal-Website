@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Login Form</h1>
+        <h3>Please enter your credentials to access the portal</h3>
+    </header>
+    <form action="/submit-handler" method="post">
+        <label for="Username">Enter Username:</label>
+
+        <!-- Text input field for username with required attribute -->
+
+        <input type="text" id ="Username" name="Username"><br><br>
+
+        <!-- Password input field with placeholder and required attribute -->
+
+        <label for="Password">Enter Password:</label>
+        <input type=""password" id="password" placeholder="Min. 8 characters" required><br><br>
+
+        <!-- Submit button to submit the form -->
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    <!-- Update Subscription Form -->
+
+    <h1>Get Updates</h1>
+
+    <form action="/subscribe" method="post">
+
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="Calender">Select a date:</label>
+        <input type="date" id="Calender" name="Calender"><br><br>
+
+        <button type="submit">Subscribe</button>
+</body>
+</html>
